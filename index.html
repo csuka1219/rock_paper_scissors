@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+
+            <h1>Kő-Papír-Olló</h1>
+            <h2>
+                Győzelem <span id="w-score">0</span> Döntetlen <span id="d-score">0</span> Vereség <span
+                    id="l-score">0</span>
+            </h2>
+        </div>
+        <div class="display-moves">
+            <div class="move">
+                <img id="p-move" src="./assets/Paper.svg">
+            </div>
+            <div style="font-size: 5em;">VS</div>
+            <div class="move">
+                <img id="c-move" src="./assets/Scissors.svg">
+            </div>
+        </div>
+        <div class="action">
+            <input class="options" type="image" src="./assets/Rock.svg" onclick="myFunction(1)">
+            <input class="options" type="image" src="./assets/Paper.svg" onclick="myFunction(2)">
+            <input class="options" type="image" src="./assets/Scissors.svg" onclick="myFunction(3)">
+        </div>
+        <h1 style="text-align: center;"><span style="color:red" id="result"></span></h1>
+    </div>
+</body>
+
+</html>
